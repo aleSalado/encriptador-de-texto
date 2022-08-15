@@ -1,0 +1,114 @@
+.panel {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+}
+
+.panel__label--textarea{
+    height: 12rem;
+    padding: 1rem;
+    resize: none;
+    font-family: var(--signika-segative);
+    border-radius: 10px;
+    border: 0;
+    color: #e4742a;
+    box-shadow: rgba(177, 121, 17, 0.473) 0px 50px 100px -20px,
+        rgba(165, 83, 15, 0.658) 0px 30px 60px -30px,
+        rgba(218, 106, 14, 0.35) 0px -2px 6px 0px inset;
+}
+
+.panel__label--textarea:focus{
+    outline: 0px;
+}
+
+.panel__label--textarea::selection{
+    background-color: #ffefbc;
+    color: #c9611caf;
+}
+
+.panel__label--textarea::placeholder {
+    font-weight: 700;
+    color: #eb791ca1;
+}
+
+.panel__label{
+    width: 80%;
+    max-width: 522px;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+div{
+    align-self: center;
+}
+
+.panel__boton{
+    font-family: var(--signika-segative);
+    background-color: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 0.25rem;
+    box-shadow: rgba(207, 99, 27, 0.911) 0 1px 3px 0;
+    color: #c9611c;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.25;
+    margin: 0 .2rem;
+    padding: 1rem;
+    text-decoration: none;
+    transition: all 250ms;
+    width: auto;
+}
+
+.panel__boton:hover,
+.panel__boton:focus {
+    border-color: rgba(184, 89, 11, 0.315);
+    box-shadow: #ad6d19bb 0 4px 12px;
+    color: #cc4c25a6;
+}
+
+.panel__boton:hover {
+    transform: translateY(-1px);
+}
+
+.panel__boton:active {
+    background-color: #f0f0f1;
+    border-color: rgba(0, 0, 0, 0.15);
+    box-shadow: rgba(0, 0, 0, 0.06) 0 2px 4px;
+    color: rgb(228, 164, 28);
+    transform: translateY(0);
+}
+
+@media screen and (min-height:748px) {
+    .panel__label--textarea {
+        height: 14rem;
+    }
+}
+
+@media screen and (min-height:1024px) {
+    .panel__label--textarea {
+        height: 20rem;
+    }
+}
+
+@media screen and (min-width:368px) {
+    .panel__boton{
+        margin: 0 1rem;
+    }
+}
+
+@media screen and (min-width:1024px) {
+    .panel {
+        flex-direction: row;
+        justify-content: center;
+    }
+    .panel__label {
+        max-width: 412px;
+        margin: 4rem 0;
+    }
+    .panel__label--textarea {
+        height: 20rem;
+    }
+}

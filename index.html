@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de texto</title>
+    <link rel="icon" href="assets/img/encriptador-icon.png">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Signika+Negative:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/normalize.css">
+    <link rel="stylesheet" href="assets/css/base.css">
+    <link rel="stylesheet" href="assets/css/panel.css">
+</head>
+
+<body>
+
+    <section class="panel container">
+        <label class='panel__label' for="entrada">
+            <textarea class='panel__label--textarea entrada' name="entrada" id="texto-entrada" placeholder="Escribe algo..." spellcheck="false"></textarea>    
+            <div>
+                <button class="panel__boton encriptar">Encriptar</button>
+                <button class="panel__boton desencriptar">Desencriptar</button>
+            </div>
+        </label>
+
+        <label class='panel__label' for="salida">
+            <textarea class='panel__label--textarea salida' name="salida"" id="texto-salida" placeholder="..." readonly spellcheck="false"></textarea>
+            <div>
+                <button class="panel__boton copiar">Copiar</button>
+            </div>
+        </label>
+    </section>
+
+    <script src="js/restricciones.js"></script>
+    <script src="js/separar-letras.js"></script>
+    <script src="js/encriptar-vocales.js"></script>
+    <script src="js/contatenar-letras.js"></script>
+    <script src="js/desencriptar-vocales.js"></script>
+    <script src="js/encriptar.js"></script>
+    <script src="js/desencriptar.js"></script>
+    <script src="js/copiar.js"></script>
+</body>
+
+</html>
