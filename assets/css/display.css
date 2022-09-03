@@ -1,38 +1,41 @@
-.panel {
+.display {
     display: flex;
     flex-direction: column;
-    gap: 2rem;
     align-items: center;
+    gap: 2rem;
 }
 
-.panel__label--textarea{
+.display__label--textarea{
     height: 12rem;
     padding: 1rem;
     resize: none;
     font-family: var(--signika-segative);
     border-radius: 10px;
     border: 0;
-    color: #e4742a;
-    box-shadow: rgba(177, 121, 17, 0.473) 0px 50px 100px -20px,
-        rgba(165, 83, 15, 0.658) 0px 30px 60px -30px,
-        rgba(218, 106, 14, 0.35) 0px -2px 6px 0px inset;
+    color:#4a9e1ad7;
+    font-size: 20px;
+    font-weight: 700;
+    background: #e6e2e2;
+    box-shadow: rgba(32, 75, 32, 0.473) 0px 50px 100px -20px,
+        rgba(28, 20, 77, 0.658) 0px 30px 60px -30px,
+        rgba(0, 0, 0, 0.35) 0px -2px 6px 0px inset;
 }
 
-.panel__label--textarea:focus{
+.display__label--textarea:focus{
     outline: 0px;
 }
 
-.panel__label--textarea::selection{
-    background-color: #ffefbc;
-    color: #c9611caf;
+.display__label--textarea::selection{
+    background-color: #f8f4e6;
+    color: #000;
 }
 
-.panel__label--textarea::placeholder {
+.display__label--textarea::placeholder {
     font-weight: 700;
-    color: #eb791ca1;
+    color:#425334;
 }
 
-.panel__label{
+.display__label{
     width: 80%;
     max-width: 522px;
     display: flex;
@@ -44,13 +47,13 @@ div{
     align-self: center;
 }
 
-.panel__boton{
+.display__btn{
     font-family: var(--signika-segative);
-    background-color: #fff;
-    border: 1px solid rgba(0, 0, 0, 0.1);
+    background-color: rgb(238, 247, 247);
+    border: 1px solid rgba(45, 122, 10, 0.616);
     border-radius: 0.25rem;
-    box-shadow: rgba(207, 99, 27, 0.911) 0 1px 3px 0;
-    color: #c9611c;
+    box-shadow: rgba(22, 128, 13, 0.911) 0 1px 3px 0;
+    color: #8dad18;
     cursor: pointer;
     font-size: 16px;
     font-weight: 700;
@@ -62,53 +65,57 @@ div{
     width: auto;
 }
 
-.panel__boton:hover,
-.panel__boton:focus {
-    border-color: rgba(184, 89, 11, 0.315);
-    box-shadow: #ad6d19bb 0 4px 12px;
-    color: #cc4c25a6;
+.display__btn:hover,
+.display__btn:focus {
+    border-color: rgba(46, 184, 11, 0.315);
+    box-shadow: #3bff22bb 0 4px 12px;
+    color: #346915;
 }
 
-.panel__boton:hover {
+.display__btn:hover {
     transform: translateY(-1px);
 }
 
-.panel__boton:active {
+.display__btn:active {
     background-color: #f0f0f1;
     border-color: rgba(0, 0, 0, 0.15);
     box-shadow: rgba(0, 0, 0, 0.06) 0 2px 4px;
-    color: rgb(228, 164, 28);
+    color: rgb(28, 228, 105);
     transform: translateY(0);
 }
 
+.warning{
+    color: rgb(197, 11, 11);
+}
+
 @media screen and (min-height:748px) {
-    .panel__label--textarea {
+    .display__label--textarea {
         height: 14rem;
     }
 }
 
 @media screen and (min-height:1024px) {
-    .panel__label--textarea {
+    .display__label--textarea {
         height: 20rem;
     }
 }
 
 @media screen and (min-width:368px) {
-    .panel__boton{
+    .display__btn{
         margin: 0 1rem;
     }
 }
 
 @media screen and (min-width:1024px) {
-    .panel {
+    .display {
         flex-direction: row;
         justify-content: center;
     }
-    .panel__label {
+    .display__label {
         max-width: 412px;
         margin: 4rem 0;
     }
-    .panel__label--textarea {
+    .display__label--textarea {
         height: 20rem;
     }
 }

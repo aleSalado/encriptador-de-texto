@@ -1,1 +1,0 @@
-const separarLetras = texto => letras = texto.split('');
